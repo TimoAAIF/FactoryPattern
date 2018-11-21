@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane fx:id="Pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AlarmFactory.Controller">
+   <children>
+      <Button fx:id="Alarmerstellen" layoutX="184.0" layoutY="27.0" mnemonicParsing="false" onAction="#Alarmerstellen" text="Schützen" />
+      <TextField fx:id="Alarmbereich" layoutX="21.0" layoutY="27.0" text="Bereich" />
+      <Button fx:id="Einbrechen" layoutX="14.0" layoutY="286.0" mnemonicParsing="false" onAction="#Einbrechen" text="Einbrechen" />
+      <TableView fx:id="tableView" layoutX="21.0" layoutY="63.0" prefHeight="200.0" prefWidth="575.0">
+          <columns>
+              <TableColumn fx:id="colName" maxWidth="5000.0" minWidth="10.0" prefWidth="178.0" text="Name" />
+              <TableColumn fx:id="colStatus" maxWidth="5000.0" minWidth="10.0" prefWidth="186.0" text="Status" />
+              <TableColumn fx:id="colAlarm" maxWidth="5000.0" minWidth="10.0" prefWidth="146.0" text="Alarm" />
+          </columns>
+      </TableView>
+      <Label fx:id="Meldungen" layoutX="264.0" layoutY="11.0" prefHeight="49.0" prefWidth="347.0" text="Meldungen" wrapText="true" />
+      <Label layoutX="21.0" layoutY="6.0" text="Welchen Bereich wollen Sie schützen?" />
+      <TextField fx:id="Einbruchsbereich" layoutX="14.0" layoutY="319.0" text="Bereich" />
+      <Button fx:id="Alarmruecksetzen" layoutX="203.0" layoutY="286.0" mnemonicParsing="false" onAction="#Alarmruecksetzen" text="Alarm rücksetzen" />
+      <Button fx:id="Alarmausschalten" layoutX="203.0" layoutY="319.0" mnemonicParsing="false" onAction="#Alarmausschalten" text="Alarmanlagen ausschalten" />
+      <Button fx:id="Alarmeinschalten" layoutX="203.0" layoutY="353.0" mnemonicParsing="false" onAction="#Alarmeinschalten" text="Alarmanlagen einschalten" />
+   </children>
+</Pane>
